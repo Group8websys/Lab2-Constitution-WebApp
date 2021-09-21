@@ -10,7 +10,7 @@ h1 {
     border: 1px solid;
     width: 80%;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .contents p {
@@ -28,4 +28,33 @@ h1 {
 .contents h3 {
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+
+.annotations {
+    width: 78%;
+    margin: auto;
+    margin-bottom: 1em;
+    border:1px solid;
+    border-radius: 8px; 
+}
+.annotations p {
+    margin: 1em 0.7em;
+}
+#preamble, #article1, #article2,  #article3, #article4, #article5, #article6, #article7, #amend1,
+#amend2, #amend3, #amend4, #amend5, #amend6, #amend7, #amend8, #amend9, #amend10{
+    display:none;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    background-color:#6ab0a1;
+    color: white;
+}
+
+button:active {
+    background-color:#518a7d;
 }
