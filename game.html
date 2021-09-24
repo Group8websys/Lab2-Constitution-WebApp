@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<title>Quiz Page</title>
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="quiz.css">
+
+<link rel="stylesheet" href="https://kit.fontawesome.com/5a5ebfd446.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="display-item">
+        <div id="quiz" class="justify-center flex-column">
+            <div id="display">
+                <div class="display-item">
+                    <p id="progressText" class="display-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="display-item">
+                    <p class="display-prefix">
+                        Score
+                    </p>
+                    <h1 class="display-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+
+            <h1 id="question">What's the answer to this question</h1>
+            <div class="choice-answer">
+                <p class="choice-letter">a.</p>
+                <p class="choice-text" data-number="1">choice1</p>
+            </div>
+            <div class="choice-answer">
+                <p class="choice-letter">b.</p>
+                <p class="choice-text" data-number="2">choice2</p>
+            </div>
+            <div class="choice-answer">
+                <p class="choice-letter">c.</p>
+                <p class="choice-text" data-number="3">choice3</p>
+            </div>
+            <div class="choice-answer">
+            <p class="choice-letter">d.</p>
+            <p class="choice-text" data-number="4">choice4</p>
+            </div>
+        </div>
+    </div>
+
+<script src="quiz.js"></script>
+
+           
+</body>
+</html>

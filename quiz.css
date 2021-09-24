@@ -1,0 +1,68 @@
+body{
+    color:antiquewhite
+}
+/* The css for the answer choices (a->d) and the question*/
+.choice-answer{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width:100%;
+    border-radius: 4px;
+    background: rgb(185, 168, 230);
+    font-size: 3rem;
+    min-width:80rem;
+}
+
+.choice-answer:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(140, 123, 186, 0.5);
+    transform: scale(1.05);
+}
+
+.choice-letter{
+    padding: 2rem 2.5rem;
+    color: white;
+}
+.choice-text{
+    padding: 2rem;
+    width:100%;
+}
+
+#question{
+    font-size: 3rem;
+}
+
+
+/*display bar css*/
+#display{
+    display:flex;
+    justify-content: space-between;
+}
+.display-prefix{
+    text-align: center;
+    font-size: 3rem;
+}
+.display-main-text{
+    text-align: center;
+}
+
+/* Progress bar to show how many questions theyve done or have left*/
+#progressBar{
+    width:20rem;
+    height: 3rem;
+    border: 0.3rem solid   black;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow:hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    border: 0.2rem solid black;
+    width:0%;
+}
+
+#progressText{
+    text-align: left;
+    font-size: 2rem;
+}
+
