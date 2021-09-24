@@ -1,12 +1,12 @@
 # Lab2
-Krisia Flores personal rep: https://github.com/kflores2/websys.git
+**Krisia Flores** personal rep: https://github.com/kflores2/websys.git
 
 Works: annotations/analysis for articles 5-7 and the 10 amendments, helped with decision to toggle analysis, did code review
 I ran into some problems when trying to analyze the 10 amendments, as they are very short. To solve this problem, I gave examples and the reasoning as to why they were implemented.
 We decided as a group to make a toggle function to hide or show the annotation blocks that included our analysis.
 
 
-name: Ayah Tharwat
+name: **Ayah Tharwat**
 rcsid: tharwa
 github handle: Ayahth23
 
@@ -47,3 +47,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 I also used font-size: rem instead of the generic px,pt,%. I liked that rem would be easier to scale if the user
 decided to change their browser's font-size option.They are resolution independent. Professor gave me this piece of advice:"You can use rem for font size. Just remember that rem is relative so either force a font with something like Google Web fonts or test out a couple of different fonts off your font-family list to make sure things still look OK with alternative fonts". This is
 not an issue because I tested out the sizes and they looked good.
+
+**Jialin Yu** - yuj14
+Induvidual repo: https://github.com/jlin9533/websyslabs
+
+Works: HTML & CSS for index, annotations for articles 1-4
+
+I copied the texts of article 1-7 and 10 amendments from the gov site into our site. 
+For styling, I didn't do anything fancy. I divided each article/amendment with a border and used different heading tag to mark up the texts and make them easier to read. 
+
+Instead of directing the user to another web page to read our analysis, we decided as a group to make a toggle function to hide or show the annotation blocks. To implement this functionality, I place a button at the end of each article/amendment div and wrote a short function using jQuery. (Clicking the button can toggle the corresponding annotation div) 
+
+One thing that I got stuck is I could not find a way to toggle different annotation div indiviudally. When the user clicked on one of the button, all annotations would show up or hide. I found a way to fix this issue: given each annotation a unique id and setting the display style to none. This is definitly not the most efficient way to fix the problem and I will continue to find a better solution after class. 
