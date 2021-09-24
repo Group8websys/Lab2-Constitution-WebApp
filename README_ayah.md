@@ -25,3 +25,17 @@ There is also a progress bar that keeps track of how many questions the user ans
 It also tallies up the score of how many correct answers they got. Then it sends the user to the end.html 
 page where they can take the quiz again or they can go back to the index.html page where they can review
 the constitution and get annotations.
+
+Another problem was the CSS formatting of the quiz. I had a problem getting all the button to look the same using
+the same class (button) but some of them had the correct class but would not format the way I wanted and that
+was because I had linked the wrong css file or forgot to link the css file onto the html.
+I also experimented with some new css propoerties like display:flex and font-size:rem.
+Display flex was much nicer to use especially for my buttons and the mcq choices which were in highlighed boxes.
+I wanted the buttons to be symmetrical and under each other without any positioning difficulty and display flex
+deemed to be a better more flexible design and layout choice. I used the below sources to understand more.
+https://www.geeksforgeeks.org/css-flex-property/ 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+
+I also used font-size: rem instead of the generic px,pt,%. I liked that rem would be easier to scale if the user
+decided to change their browser's font-size option.They are resolution independent. Professor gave me this piece of advice:"You can use rem for font size. Just remember that rem is relative so either force a font with something like Google Web fonts or test out a couple of different fonts off your font-family list to make sure things still look OK with alternative fonts". This is
+not an issue because I tested out the sizes and they looked good.
