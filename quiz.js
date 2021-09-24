@@ -12,6 +12,7 @@ let score= 0
 let questionCounter= 0
 let availableQuestions= []
 
+/*the multiple choice questions and choices...along with the correct answers*/
 let questions = [
     {
         question:'What is the First Amendment?',
@@ -100,12 +101,16 @@ let questions = [
 const SCORE_POINTS=1
 const MAX_QUESTIONS=10
 
+
 startGame=()=>{
     questionCounter=0
     score=0
     availableQuestions= [...questions]
     getNewQuestion()
 }
+/*if there are still more questions ie the question counter is less than Max questions , getNewQuestion 
+and print the most recent score...once the user is done with the quiz, the browser will open a new "window" for
+the end.html file where they will have the choice to retake or go back to homepage*/
 
 getNewQuestion= () =>{
     if(availableQuestions.length===0 || questionCounter > MAX_QUESTIONS){
@@ -132,6 +137,7 @@ getNewQuestion= () =>{
     acceptingAnswers=true
 }
 
+/*checks if user clicked on the correct 'number' which is provided in the list question portion*/
 choices.forEach(choice => {
     choice.addEventListener('click', e=>{
         if(!acceptingAnswers) return
@@ -156,10 +162,11 @@ choices.forEach(choice => {
 
 })
 
+/* this will increment the score we already have every time the user answers correctly*/
 incrementScore = num => {
     score += num
     scoreText.innerText =score
 }
-
+/*call function to start the game*/
 startGame()
 
